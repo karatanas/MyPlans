@@ -41,6 +41,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Plans" id="4QH-9v-3Kh">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="GYB-AF-hwA">
+                            <connections>
+                                <action selector="pushEditAction:" destination="96j-n5-jcM" id="jxe-gy-BQL"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="dBy-uf-K6j">
                             <connections>
                                 <action selector="pushAddAction:" destination="96j-n5-jcM" id="TQr-U0-0M3"/>
