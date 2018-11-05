@@ -74,9 +74,9 @@ class TableViewController: UITableViewController {
         cell.textLabel?.text = currentItem["Name"] as? String
         
         if (currentItem["isCompleted"] as? Bool) == true {
-            cell.accessoryType = .checkmark
+            cell.imageView?.image = check
         }else{
-            cell.accessoryType = .none
+            cell.imageView?.image = uncheck
         }
         
         return cell
@@ -107,10 +107,10 @@ class TableViewController: UITableViewController {
         
         if changeState(at: indexPath.row){
             
-            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+            tableView.cellForRow(at: indexPath)?.imageView?.image = check
             
         }else{
-            tableView.cellForRow(at: indexPath)?.accessoryType = .none
+            tableView.cellForRow(at: indexPath)?.imageView?.image = uncheck
         }
         
         
